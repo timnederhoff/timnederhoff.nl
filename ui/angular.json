@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "timnederhoff-nl-ui": {
+    "ui": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/timnederhoff-nl-ui",
+            "outputPath": "dist/ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -57,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "timnederhoff-nl-ui:build"
+            "browserTarget": "ui:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "timnederhoff-nl-ui:build:production"
+              "browserTarget": "ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "timnederhoff-nl-ui:build"
+            "browserTarget": "ui:build"
           }
         },
         "test": {
@@ -103,5 +104,5 @@
       }
     }
   },
-  "defaultProject": "timnederhoff-nl-ui"
+  "defaultProject": "ui"
 }
