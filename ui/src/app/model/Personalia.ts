@@ -2,8 +2,9 @@ export class Personalia {
   name: string;
   email: string;
   socialMedia: {
+    username?: string,
     media: string,
-    value: string
+    url: string
   }[];
   description: string;
   background?: string;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { of, Observable } from 'rxjs';
 import { Personalia } from './model/Personalia';
 
 @Injectable({
@@ -21,7 +21,8 @@ const MOCKPERSONALIA: Personalia = {
   socialMedia: [
     {
       media: 'github',
-      value: 'https://github.com/timnederhoff'
+      username: 'timnederhoff',
+      url: 'https://github.com/timnederhoff'
     }
   ],
   background: 'I am not the person who always knows everything, I am the guy that does make things work\n' +

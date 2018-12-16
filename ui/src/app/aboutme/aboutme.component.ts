@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Personalia } from '../model/Personalia';
 import { PersonaldataService } from '../personaldata.service';
 

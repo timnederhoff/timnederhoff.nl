@@ -1,3 +1,18 @@
-<p>
-  aboutme works!
-</p>
+<ul>
+  <li>
+    <label>Name:</label>
+    <span>{{ personalia.name }}</span>
+  </li>
+  <li>
+    <label>E-mail:</label>
+    <span>{{ personalia.email }}</span>
+  </li>
+  <li *ngFor="let media of personalia.socialMedia"  >
+    <a href="{{ media.url }}">{{ media.username || (media.media | titlecase) }}</a>
+  </li>
+</ul>
+
+<div>
+  <h2>Background</h2>
+  <p>{{ personalia.background }}</p>
+</div>
